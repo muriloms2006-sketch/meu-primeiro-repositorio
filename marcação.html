@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marcação html</title>
+</head>
+<body>
+    <h2>&lt;input type="text"&gt;</h2>
+    <label for="name">Nome (4 a 8 caracteres):</label>
+    <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+    <hr>
+    <h2>&lt;input type="button"&gt;</h2>
+    <input type="button" value="Meu botão">
+    <hr>
+    <h2>&lt;input type="checkbox"&gt;</h2>
+    <fieldset>
+        <legend>Escolha as caracterísiticas do seu monstro:</legend>
+        <div>
+            <input type="checkbox" id="escamas" checked>
+            <label for="escamas">Escamas</label>
+        </div>
+        <div>
+            <input type="checkbox" id="chifres" name="chifres">
+            <label for="chifres">Chifres</label>
+        </div>
+    </fieldset>
+    <hr>
+    <h2>&lt;input type="date"&gt;</h2>
+    <label for="data">Começar data:</label>
+    <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-01" max="2018-12-31">
+    <hr>
+    <h2>&lt;input type="datetime-local"&gt;</h2>
+    <label for="meeting-time">Escolha um horário para o seu depoimento:</label>
+    <input type="datetime-local" id="meeting-time" name="meeting-time" value="2018-06-12T19:30"
+    min="2018-06-07T00:00" max="2018-06-14T00:00">
+    <hr>
+    <h2>&lt;input type="email"&gt;</h2>
+    <label for="email">Entre com seu servidor.com.br email:</label>
+    <input type="email" id="email" pattern=".+@servidor\.com" size="30" required>
+    <hr>
+    <h2>&lt;input type="file"&gt;</h2>
+    <label for="avatar">Escolha uma imagem:</label>
+    <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+    <hr>
+    <h2>&lt;input type="image"&gt;</h2>
+    <p>Acesse a sua conta:</p>
+    <div>
+        <label for="userId">ID do usuário</label>
+        <input type="text" id="userId" name="userId">
+    </div>
+    <input type="image" id="image" alt="login" src="/media/examples/login-button.png">
+    <hr>
+    <h2>&lt;input type="number"&gt;</h2>
+    <label for="tentacles">Número de tentáculos (10-100):</label>
+    <input type="number" id="tentacles" name="tentacles" min="10" max="10">
+    <hr>
+</body>
+</html>

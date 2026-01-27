@@ -55,5 +55,77 @@
     <label for="tentacles">Número de tentáculos (10-100):</label>
     <input type="number" id="tentacles" name="tentacles" min="10" max="10">
     <hr>
+    <h2>&lt;input type="password"&gt;</h2>
+    <div>
+        <label for="username">Nome do usuário:</label>
+        <input type="text" id="username" name="username">
+    </div>
+    <div>
+        <label for="pass">Senha (minímo 8 caracteres):</label>
+        <input type="password" id="pass" name="password" minlength="8" required>
+    </div>
+    <input type="submit" value="Entrar">
+    <hr>
+    <h2>&lt;input type="radio"&gt;</h2>
+    <fieldset>
+        <legend>Escolhe um drone de manutenção:</legend>
+        <div>
+            <input type="radio" id="huey" name="drone" value="huey" checked>
+            <label for="heuy">Huey</label>
+        </div>
+        <div>
+            <input type="radio" id="dewey" name="drone" value="dewey">
+            <label for="dewey">Dewey</label>
+        </div>
+        <div>
+            <input type="radio" id="louie" name="drone" value="louie">
+            <label for="louie">Louie</label>
+        </div>
+    </fieldset>
+    <hr>
+    <h2>&lt;input type="reset"&gt;</h2>
+    <form>
+        <div class="controls">
+            <label for="id">ID usuário:</label>
+            <input type="text" id="id" name="id">
+            <input type="reset" value="Reset">
+            <input type="submit" value="Submit">
+        </div>
+    </form>
+    <hr>
+    <h2>&lt;input type="range"&gt;</h2>
+    <p>Configurações de audio:</p>
+    <div>
+        <input type="range" id="volume" name="volume" min="0" max="11">
+        <label for="volume">Volume</label>
+    </div>
+    <div>
+        <input type="range" name="cowbell" id="cowbell" min="0" max="100" value="90 ">
+        <label for="cowbell">Cowbell</label>
+    </div>
+    <hr>
+    <h2>&lt;input type="search"&gt;</h2>
+    <label for="site-search">Procurar site:</label>
+    <input type="search" id="site-search" name="id">
+    <button>Procurar</button>
+    <hr>
+    <h2>&lt;input type="tel"&gt;</h2>
+    <label for="phone">Telefone:</label>
+    <input type="tel" id="phone" name="phone" required><br>
+    <small>Formato: (47)99999-99999</small>
+    <hr>
+    <h2>&lt;input type="text"&gt;</h2>
+    <label for="name">Nome (4 a 8 caracteres):</label>
+    <input type="text" id="name" name="name" required minlength="4" maxlength="8" size="10">
+    <hr>
+    <h2>&lt;input type="url"&gt;</h2>
+    <form>
+        <label for="url">Enter an https:// URL:</label>
+        <input type="url" name="url" id="url" placeholder="https://example.com" pattern="https://.*" size="30" required>
+    </form>
+    <hr>
+    <h2>&lt;input type="week"&gt;</h2>
+    <label for="week">Escolhe uma semana em Maio ou Junho:</label>
+    <input type="week" name="week" id="camp-week" min="2018-W18" max="2018-W26" required>
 </body>
 </html>
